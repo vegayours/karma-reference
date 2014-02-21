@@ -1,8 +1,13 @@
 module.exports = function(grunt){
   grunt.initConfig({
-    'pkgFile': 'package.json',
-    'publish': {
+    pkgFile: 'package.json',
+    publish: {
       abortIfDirty: true
+    },
+    bump: {
+      options: {
+        pushTo: 'master'        
+      }
     }
   });
   grunt.loadNpmTasks('grunt-npm');
