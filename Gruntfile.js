@@ -6,5 +6,11 @@ module.exports = function(grunt){
     }
   });
   grunt.loadNpmTasks('grunt-npm');
-  grunt.registerTask('default', ['publish']);
+  grunt.loadNpmTasks('grunt-bump');
+  grunt.registerTask('release', function(type){
+    grunt.task.run([
+      "bump:" + type || 'patch',
+      "publish"
+    ]);
+  });
 }

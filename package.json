@@ -24,6 +24,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.2",
-    "grunt-npm": "~0.0.2"  
+    "grunt-npm": "~0.0.2",
+    "grunt-bump": "~0.0.13"
   }
 }
