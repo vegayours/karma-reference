@@ -29,3 +29,8 @@ File path could be:
 * Relative path like ```@reference ../../dir/file.coffee```.
 * Absolute path like ```@reference ~/dir/file.js``` which is resolved against karma config basePath.
 
+## TODO
+* Add tests
+* Parse only comments sections of files
+* Allow customize reference pattern by regexps in config
+* Resolve dirty hack of framework initialization (karma and node-di does not support async plugins now)
