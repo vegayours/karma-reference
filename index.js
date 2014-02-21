@@ -14,20 +14,18 @@ var createReference = function(config, logger, emitter, fileList) {
   var log = logger.create('karma-reference');
   // helpers
   function createFileList(){
-    var list = [];
     var promises = _.map(configFiles, function(entry){
       var defered = q.defer();
       glob(entry.pattern, function(er, files){
-        _.each(files, function(filename){
-          var fileItem = _.extend({}, entry, {pattern: path.normalize(filename)});
-          list.push(fileItem);
+        var resolvedFiles = _.map(files, function(filename){
+          return _.extend({}, entry, {pattern: path.normalize(filename)});
         });
-        defered.resolve();
+        defered.resolve(resolvedFiles);
       }); 
       return defered.promise;
     });
     return q.all(promises).then(function() {
-      return list;
+      return _.flatten(arguments);
     })
   }
   function shouldScanFile(filename){
