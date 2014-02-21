@@ -1,0 +1,29 @@
+{
+  "name": "karma-reference",
+  "version": "0.0.1",
+  "description": "Karma plugin. Lightweight dependencies tracking for js and coffee files via references.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vegayours/karma-reference.git"
+  },
+  "keywords": [
+    "karma-plugin"
+  ],
+  "author": "Alexandr Likhanov <vegayours@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "karma": "~0.10.0",
+  },
+  "dependencies": {
+    "glob": "~3.2.8",
+    "lodash": "~2.4.1",
+    "line-reader": "~0.2.3",
+    "q": "~1.0.0",
+    "dependency-graph": "~0.1.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-npm": "~0.0.2"  
+  }
+}
