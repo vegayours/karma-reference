@@ -21,10 +21,11 @@ for coffee:
 ```
 
 Now your files would be loaded in sorted by reference dependencies order.
+
 **Note: this breaks watching of adding new files, because initial globs are resolved to filelist.**
 
 ## File paths
 File path could be:
 * Relative path like ```@reference ../../dir/file.coffee```.
-* Absolute path like ```@reference ~/dir/file.js``` which is resolved agains karma config basePath.
+* Absolute path like ```@reference ~/dir/file.js``` which is resolved against karma config basePath.
 
