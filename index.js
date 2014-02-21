@@ -39,8 +39,8 @@ var createReference = function(config, logger, emitter, fileList) {
     var defered = q.defer();
     var references = [];
     function normalizePath(filePath){
-      if (filePath.indexOf('~') == 0){
-        return path.join(basePath, filePath.slice())
+      if (filePath[0] == '~'){
+        return path.join(basePath, filePath.substr(1))
       }
       return path.join(fileBasePath, filePath);
     }
