@@ -13,7 +13,7 @@
   "author": "Alexandr Likhanov <vegayours@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
-    "karma": "~0.10.0",
+    "karma": "~0.10.0"
   },
   "dependencies": {
     "glob": "~3.2.8",
