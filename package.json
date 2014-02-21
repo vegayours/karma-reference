@@ -1,6 +1,6 @@
 {
   "name": "karma-reference",
-  "version": "0.0.1-1",
+  "version": "0.0.2-0",
   "description": "Karma plugin. Lightweight dependencies tracking for js and coffee files via references.",
   "main": "index.js",
   "repository": {
