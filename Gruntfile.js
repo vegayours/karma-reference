@@ -3,11 +3,6 @@ module.exports = function(grunt){
     pkgFile: 'package.json',
     publish: {
       abortIfDirty: true
-    },
-    bump: {
-      options: {
-        pushTo: 'master'        
-      }
     }
   });
   grunt.loadNpmTasks('grunt-npm');
